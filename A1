@@ -1,0 +1,15 @@
+/**
+ * @param {number} num
+ * @return {boolean}
+ */
+var isPerfectSquare = function(num) {
+    var check = false;
+    for(var i = 0; Math.pow(i,2)<=num;i++){
+        if((num%i ==0) && ((num/i) ==i))
+        {
+            check = true;
+            break;
+        }        
+    }
+    return check;
+};
